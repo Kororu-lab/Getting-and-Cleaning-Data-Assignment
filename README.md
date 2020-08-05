@@ -27,6 +27,7 @@ and raw data from : https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles
 About running environment
 ---------------------------
 This function has been written in R version: 4.0.2; with Windows 10(64 bit OS)
+
 Since made in RStudio, recommended to run in RStudio(Version 1.2.1335)
 
 --------------------------------
