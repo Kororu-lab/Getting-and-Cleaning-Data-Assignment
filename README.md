@@ -38,14 +38,14 @@ run_analysis.R changes some variablenames to make it easy for reader to figure o
 I tried to change these 9 patterns with gsub() function
 
 --------------------------
-Acc -> Accelerometer
-Gyro -> Gyroscope
-Mag <- Magnitude
-BodyBody <- Body(unnecessary?)
-^t(starts with t) -> Time
-^f(starts with f) -> Frequency
-mean() -> Mean
-std() -> StandardDeviation
-Freq -> Frequency
+>Acc -> Accelerometer
+>Gyro -> Gyroscope
+>Mag <- Magnitude
+>BodyBody <- Body(unnecessary?)
+>^t(starts with t) -> Time
+>^f(starts with f) -> Frequency
+>mean() -> Mean
+>std() -> StandardDeviation
+>Freq -> Frequency
 
 --------------------------
