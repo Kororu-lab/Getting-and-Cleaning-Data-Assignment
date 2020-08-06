@@ -39,6 +39,13 @@ colnames(total_data) <- gsub("mean", "Mean", colnames(total_data))
 colnames(total_data) <- gsub("std", "StandardDeviation", colnames(total_data))
 colnames(total_data) <- gsub("Freq", "Frequency", colnames(total_data))
 
+
 ##making second tidy dataset by calculating each variables' average
-total_data_avg <- sapply(total_data, mean) 
-total_data_avg <- as.matrix(total_data_avg); colnames(total_data_avg) <- "average" ##making as a form of matrix
+total_data_avg <- total_data %>% ##by total_data
+    group_by(activity, subject) %>% ##sorting by activity/subject
+        summarize_all(list(mean)) ##calculating each avg;
+
+
+##extracting out tidy dataset
+write.table(total_data_avg, "tidydata.txt") ##stored as txt file in root dir
+
