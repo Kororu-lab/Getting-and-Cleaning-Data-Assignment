@@ -12,7 +12,7 @@ and raw data from : https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles
 
 
 
-"Tidy dataset" has made through following instructions from the lecture;
+"Tidy dataset" has made through following instructions from the lecture:
 
 --------------------------------
 1. Merges the training and the test sets to create one data set.
